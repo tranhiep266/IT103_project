@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/login.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/sweetalert2@11.17.2/dist/sweetalert2.min.css"
+    />
+  </head>
+
+  <body>
+    <div>
+      <nav class="head" id="head">
+        <div class="container" id="container">
+          <p class="VocabAppMain" id="VocabAppMain">VocabApp</p>
+          <div class="doubleBtn">
+            <button class="loginBtn" id="loginBtn">Login</button>
+            <button class="registerBtn" id="registerBtn">Register</button>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <div class="main-content">
+      <nav class="loginForm">
+        <p class="logTitle">Login</p>
+        <form class="logForm" id="logForm">
+          <div>
+            <label for="logEmail">Email</label>
+            <input type="email" id="logEmail" />
+            <p class="error-message" id="errorMessageEmail"></p>
+          </div>
+          <div>
+            <label for="logPassword">Password</label>
+            <input type="password" id="logPassword" />
+            <p class="error-message" id="errorMessagePassword"></p>
+          </div>
+          <button class="logBtn" id="logBtn">Login</button>
+        </form>
+      </nav>
+    </div>
+
+    <footer>
+      <p>&copy; 2024 VocabApp. All rights reserved.</p>
+    </footer>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="../js/login.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</html>

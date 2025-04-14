@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/register.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div>
+      <nav class="head" id="head">
+        <div class="container" id="container">
+          <p class="VocabAppMain" id="VocabAppMain" onclick="homepage()">
+            VocabApp
+          </p>
+          <div class="doubleBtn">
+            <button class="loginBtn" id="loginBtn" onclick="loginAccount()">
+              Login
+            </button>
+            <button class="registerBtn" id="registerBtn">Register</button>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <div class="main-content">
+      <nav class="registerForm">
+        <p class="registTitle">Register</p>
+        <form class="registForm" id="registForm">
+          <div>
+            <label for="registFirstName">First Name</label>
+            <input type="text" id="registFirstName" />
+            <p class="error-message" id="errorMessageFirstName"></p>
+          </div>
+          <div>
+            <label for="registLastName">Last Name</label>
+            <input type="text" id="registLastName" />
+            <p class="error-message" id="errorMessageLastName"></p>
+          </div>
+          <div>
+            <label for="registEmail">Email</label>
+            <input type="email" id="registEmail" />
+            <p class="error-message" id="errorMessageEmail"></p>
+          </div>
+          <div>
+            <label for="registPassword">Password</label>
+            <input type="password" id="registPassword" />
+            <p class="error-message" id="errorMessagePassword"></p>
+          </div>
+          <div>
+            <label for="confirmPassword">Confirm Password</label>
+            <input type="password" id="confirmPassword" />
+            <p class="error-message" id="errorMessageConfirmPassword"></p>
+          </div>
+          <button class="registBtn" id="registBtn">Register</button>
+        </form>
+      </nav>
+    </div>
+
+    <footer>
+      <p>&copy; 2024 VocabApp. All rights reserved.</p>
+    </footer>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="../js/register.js"></script>
+</html>
